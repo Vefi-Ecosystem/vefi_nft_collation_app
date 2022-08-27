@@ -1,15 +1,30 @@
-import { Typography } from 'antd';
-import React from 'react';
-import { FormWrapper } from './Form.style';
-import { Container, Button } from 'components';
-import { FiUploadCloud } from 'react-icons/fi';
-import { Select } from 'antd';
+import { Typography } from "antd";
+import React, { useState, useRef } from "react";
+import { FormWrapper } from "./Form.style";
+import { Container, Button } from "components";
+import { FiUploadCloud } from "react-icons/fi";
+import { db } from "utils/firebase";
+import { collection, onSnapshot, addDoc } from "firebase/firestore";
+import { Select } from "antd";
 const { Option } = Select;
 
 const Form = () => {
-  const handleChange = (value: string) => {
-    console.log(`selected ${value}`);
-  };
+  const [blockchain, setBlockchain] = useState<string>("lucy");
+  const [file, setFile] = useState<string>();
+  const [name, setName] = useState<string>();
+  const [ext_link, setExt_link] = useState<string>();
+  const [description, setDescription] = useState<string>();
+
+  
+  const submit = () => {
+    addDoc(collection(db, "items"), {
+      file,
+      name,
+      blockchain,
+      externalLink: ext_link,
+      description
+    });
+  }
 
   return (
     <>
@@ -37,6 +52,10 @@ const Form = () => {
                 multiple
                 className="file"
                 accept="image/*"
+                onChange={(e) => {
+                  setFile(e.target.value);
+                }}
+                value={file}
               />
               <label htmlFor="files" className="upload">
                 <FiUploadCloud className="upload__img" />
@@ -50,6 +69,10 @@ const Form = () => {
                 type="text"
                 placeholder="Item name"
                 className="form__control"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+                value={name}
               />
             </div>
             <div className="form">
@@ -63,6 +86,10 @@ const Form = () => {
                 type="text"
                 placeholder="https://yorsite.io/item/123"
                 className="form__control"
+                onChange={(e) => {
+                  setExt_link(e.target.value);
+                }}
+                value={ext_link}
               />
             </div>
             <div className="form">
@@ -76,6 +103,10 @@ const Form = () => {
                 cols={4}
                 placeholder="Provide a detailed description of your item."
                 className="form__control"
+                onChange={(e) => {
+                  setDescription(e.target.value);
+                }}
+                value={description}
               ></textarea>
             </div>
             <div className="form">
@@ -89,6 +120,10 @@ const Form = () => {
                 type="text"
                 placeholder="https://yorsite.io/item/123"
                 className="form__control"
+                onChange={(e) => {
+                  setExt_link(e.target.value);
+                }}
+                value={ext_link}
               />
             </div>
             <div className="form">
@@ -102,12 +137,21 @@ const Form = () => {
                 type="text"
                 placeholder="https://yorsite.io/item/123"
                 className="form__control"
+                onChange={(e) => {
+                  setExt_link(e.target.value);
+                }}
+                value={ext_link}
               />
             </div>
             <div className="form">
               <Typography.Title level={3}>Blockchain</Typography.Title>
 
-              <Select defaultValue="lucy" onChange={handleChange}>
+              <Select
+                defaultValue={blockchain}
+                onChange={(value) => {
+                  setBlockchain(value);
+                }}
+              >
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
                 <Option value="disabled" disabled>
@@ -121,6 +165,7 @@ const Form = () => {
                 label="Create"
                 bg="var(--btn-graidient)"
                 borderRadius="20px"
+                onClick={submit}
               />
             </div>
           </div>
