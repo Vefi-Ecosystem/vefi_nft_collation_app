@@ -16,9 +16,9 @@ const Header = () => {
             </div>
             <div className="header__nav">
               <div className="nav__left">
-                <Link href="/">Marketplace</Link>
+                {/* <Link href="/">Marketplace</Link>
                 <Link href="/">Artist</Link>
-                <Link href="/">Collections</Link>
+                <Link href="/">Collections</Link> */}
               </div>
               <div className="nav__right mobile_">
                 <NavLink href="/item">

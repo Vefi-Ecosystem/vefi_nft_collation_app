@@ -22,9 +22,9 @@ const Footer = () => {
             <div className="footer__nav">
               <div className="footer__right">
                 <div className="footer__links">
-                  <Link href="/">Ecosystem</Link>
-                  <Link href="/">Partners</Link>
-                  <Link href="/">Token</Link>
+                  <a href="https://vefinetwork.org">Ecosystem</a>
+                  <a href="#">Partners</a>
+                  <a href="https://brisescan.com/token/0xd6447d2fa919811c41a064bdbdab1e281f8de9b2">Token</a>
                 </div>
               </div>
               <div className="footer__scroll">
