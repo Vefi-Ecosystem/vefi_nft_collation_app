@@ -1,9 +1,9 @@
-import Container from 'components/Layout/Container';
-import React from 'react';
-import { Image } from '../../components';
-import { SliderWrapper } from './Carousel.style';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Container from "components/Layout/Container";
+import React from "react";
+import { Image } from "../../components";
+import { SliderWrapper } from "./Carousel.style";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Slider = () => {
   return (
@@ -28,24 +28,24 @@ const Slider = () => {
               desktop: {
                 breakpoint: {
                   max: 3000,
-                  min: 1024,
+                  min: 1024
                 },
-                items: 1,
+                items: 1
               },
               mobile: {
                 breakpoint: {
                   max: 464,
-                  min: 0,
+                  min: 0
                 },
-                items: 1,
+                items: 1
               },
               tablet: {
                 breakpoint: {
                   max: 1024,
-                  min: 464,
+                  min: 464
                 },
-                items: 1,
-              },
+                items: 1
+              }
             }}
             rewind={true}
             rewindWithAnimation={true}
@@ -55,30 +55,10 @@ const Slider = () => {
             swipeable
           >
             <div className="slider__container">
-              <Image
-                src="/images/1.jpg"
-                alt="image"
-                width="300px"
-                height="300px"
-              />
-              <Image
-                src="/images/1.jpg"
-                alt="image"
-                width="300px"
-                height="300px"
-              />
-              <Image
-                src="/images/1.jpg"
-                alt="image"
-                width="300px"
-                height="300px"
-              />
-              <Image
-                src="/images/1.jpg"
-                alt="image"
-                width="300px"
-                height="300px"
-              />
+              <Image src="/images/1.jpg" alt="image" width="300px" height="300px" />
+              <Image src="/images/1.jpg" alt="image" width="300px" height="300px" />
+              <Image src="/images/1.jpg" alt="image" width="300px" height="300px" />
+              <Image src="/images/1.jpg" alt="image" width="300px" height="300px" />
             </div>
           </Carousel>
         </Container>

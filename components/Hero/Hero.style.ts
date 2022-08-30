@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
   height: calc(100vh - 80px);
@@ -88,7 +88,7 @@ export const HeroWrapper = styled.section`
     }
   }
   .paragraph {
-    font-family: 'Inter';
+    font-family: "Inter";
     color: var(--white-text);
     font-size: 0.8rem;
     font-weight: 400;
@@ -178,7 +178,7 @@ export const HeroWrapper = styled.section`
     position: relative;
     box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.3);
     border: 2px solid #fff;
-    background-image: url('/images/1.jpg');
+    background-image: url("/images/1.jpg");
 
     @media screen and (max-width: 760px) {
       width: 250px;
@@ -186,7 +186,7 @@ export const HeroWrapper = styled.section`
     }
   }
   .img-area:before {
-    content: '';
+    content: "";
     height: 300px;
     width: 350px;
     background: brown;
@@ -205,7 +205,7 @@ export const HeroWrapper = styled.section`
     }
   }
   .img-area:after {
-    content: '';
+    content: "";
     height: 300px;
     width: 350px;
     background: green;

@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 interface IContainer {
   maxWidth?: string;
   children?: any;
@@ -7,7 +7,7 @@ interface IContainer {
 
 const ContainerWrapper = styled.div<IContainer>`
   width: 100%;
-  max-width: ${(props) => (props.maxWidth ? props.maxWidth : '1200px')};
+  max-width: ${props => (props.maxWidth ? props.maxWidth : "1200px")};
   margin-left: auto;
   margin-right: auto;
 `;

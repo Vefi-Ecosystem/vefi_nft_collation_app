@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   width: 100%;
@@ -36,7 +36,7 @@ export const FooterWrapper = styled.footer`
       .footer__links {
         a {
           margin: 0 25px;
-          font-family: 'Poppins';
+          font-family: "Poppins";
           font-size: 1.5rem;
           color: rgba(255, 255, 255, 0.8);
         }

@@ -1,1 +1,1 @@
-export { default as LearnMore } from './learnMore';
+export { default as LearnMore } from "./learnMore";

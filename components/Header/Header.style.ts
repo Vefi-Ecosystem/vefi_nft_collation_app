@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   width: 100%;
@@ -29,7 +29,7 @@ export const HeaderContainer = styled.header`
       .nav__left {
         a {
           margin: 0 20px;
-          font-family: 'Inter';
+          font-family: "Inter";
           font-size: 1.3rem;
         }
         @media screen and (max-width: 760px) {

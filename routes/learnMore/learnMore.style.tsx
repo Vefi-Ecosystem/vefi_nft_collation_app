@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const LearnMoreWrapper = styled.section`
   padding: 80px 0;
@@ -24,12 +24,12 @@ export const LearnMoreWrapper = styled.section`
   }
   .Learn__more {
     line-height: 39px;
-    font-family: 'Inter';
+    font-family: "Inter";
     padding: 20px 0;
 
     h1 {
       color: #fff;
-      font-family: 'Inter';
+      font-family: "Inter";
       padding: 30px 0 10px 0;
     }
     .content {

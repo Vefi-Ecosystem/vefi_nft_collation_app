@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FormWrapper = styled.section`
   width: 100%;
@@ -51,7 +51,7 @@ export const FormWrapper = styled.section`
     letter-spacing: 0.1rem;
   }
   h3 {
-    font-family: 'Inter' !important;
+    font-family: "Inter" !important;
     color: var(--white-text);
     font-size: 0.9rem;
   }

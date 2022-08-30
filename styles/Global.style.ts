@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 interface ISection {
   padding?: string;
 }
@@ -61,30 +61,26 @@ p{
 export const LayoutWrapper = styled.section`
   width: 100%;
   min-height: 100vh;
-  background: url('/images/background.jpg') no-repeat;
+  background: url("/images/background.jpg") no-repeat;
   background-position: top right;
   background-size: cover;
   position: relative;
   overflow: hidden;
   .container {
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.03),
-      rgba(0, 0, 0, 0.7)
-    );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.7));
     width: 100%;
     height: 600px;
     position: absolute;
     bottom: 0;
   }
   @media screen and (max-width: 760px) {
-    background: url('/images/mobile.jpg') no-repeat;
+    background: url("/images/mobile.jpg") no-repeat;
     background-size: cover;
   }
 `;
 
 export const Section = styled.section<ISection>`
-  padding: ${(props) => (props.padding ? props.padding : '')};
+  padding: ${props => (props.padding ? props.padding : "")};
 `;
 export const ModalWrapper = styled.div``;
 

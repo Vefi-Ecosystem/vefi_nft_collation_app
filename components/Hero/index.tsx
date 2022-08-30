@@ -1,8 +1,8 @@
-import React from 'react';
-import { Container, Button, NavLink } from '../index';
-import { Typography } from 'antd';
-import { Section } from 'styles/Global.style';
-import { HeroWrapper } from './Hero.style';
+import React from "react";
+import { Container, Button, NavLink } from "../index";
+import { Typography } from "antd";
+import { Section } from "styles/Global.style";
+import { HeroWrapper } from "./Hero.style";
 const { Paragraph } = Typography;
 
 const HeroSection = () => {
@@ -28,9 +28,8 @@ const HeroSection = () => {
                   </div>
                   <h2>Digital Artworks.</h2>
                   <Paragraph className="paragraph">
-                    The largest NFT marketplace. Authentic and truly unique
-                    digital creation. Signed and issued by the creator, made
-                    possible by blockchain technology.
+                    The largest NFT marketplace. Authentic and truly unique digital creation. Signed and issued by the
+                    creator, made possible by blockchain technology.
                   </Paragraph>
                 </>
               </div>
@@ -41,9 +40,7 @@ const HeroSection = () => {
                   </div>
                 </div>
                 <div className="active__image__info">
-                  <Typography.Title level={2}>
-                    Featured Collection
-                  </Typography.Title>
+                  <Typography.Title level={2}>Featured Collection</Typography.Title>
                   <p className="paragraph">Art Blocks Factory</p>
                 </div>
               </div>
