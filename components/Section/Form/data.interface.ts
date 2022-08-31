@@ -11,4 +11,5 @@ export default interface Data {
   imageUrl: string;
   externalLink?: string;
   blockchain: string;
+  pricePerAsset: number;
 }

@@ -4,6 +4,7 @@ import GlobalStyle, { LayoutWrapper } from "../styles/Global.style";
 import "antd/dist/antd.css";
 import "../styles/style.css";
 import { Footer, Header } from "../components";
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>

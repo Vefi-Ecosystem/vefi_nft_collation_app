@@ -22,10 +22,12 @@ interface IButton {
   icon?: any;
   className?: any;
   onClick?: any;
+  disabled?: boolean;
+  type?: undefined | "submit";
 }
 
 const StyledButton = styled.button<IButton>`
-  background: ${props => (props.bg ? props.bg : "#000")};
+  background: ${props => (props.bg && !props.disabled ? props.bg : "#dcdcdc")};
   color: ${props => (props.color ? props.color : "#000")};
   border: ${props => (props.border ? props.border : "none")};
   padding: ${props => (props.padding ? props.padding : "10px 20px;")};

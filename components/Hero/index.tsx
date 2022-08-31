@@ -3,6 +3,7 @@ import { Container, Button, NavLink } from "../index";
 import { Typography } from "antd";
 import { Section } from "styles/Global.style";
 import { HeroWrapper } from "./Hero.style";
+
 const { Paragraph } = Typography;
 
 const HeroSection = () => {
@@ -18,18 +19,18 @@ const HeroSection = () => {
                   <div className="wrapper">
                     <div className="words">
                       <span>Super Rare</span>
-                      <span>Super Unique</span>
-                      <span>Super Quality</span>
-                      <span>Awesome Art</span>
-                      <span>Super Rare</span>
-                      <span>Super Rare</span>
-                      <span>Super Rare</span>
+                      <span>Unique</span>
+                      <span>Fantastic</span>
+                      <span>Awesome</span>
+                      <span>Eye-catching</span>
+                      <span>Super Cool</span>
+                      <span>Exciting</span>
                     </div>
                   </div>
                   <h2>Digital Artworks.</h2>
                   <Paragraph className="paragraph">
-                    The largest NFT marketplace. Authentic and truly unique digital creation. Signed and issued by the
-                    creator, made possible by blockchain technology.
+                    The most trusted NFT marketplace with authentically signed and issued NFTs and collections all
+                    existing on various chains.
                   </Paragraph>
                 </>
               </div>
@@ -49,7 +50,7 @@ const HeroSection = () => {
               <div className="button__wrapper">
                 <NavLink href="/item">
                   <Button
-                    label="Whitelist collectiions"
+                    label="Register your collection for pre-launch"
                     bg="rgba(0,0,0,0.5)"
                     color="#fff"
                     borderRadius="30px"

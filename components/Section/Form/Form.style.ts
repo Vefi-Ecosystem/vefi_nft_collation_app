@@ -59,7 +59,6 @@ export const FormWrapper = styled.section`
     color: var(--input-bg);
     font-size: 0.75rem;
     padding-bottom: 8px;
-    text-transform: capitalize;
   }
   .red {
     color: red;

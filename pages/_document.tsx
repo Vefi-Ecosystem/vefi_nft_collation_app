@@ -23,7 +23,7 @@ export default class CustomDocument extends Document {
           />
           <meta
             name="description"
-            content="Vefi is building a future immersed in Web3 for the massive adoption of blockchain technology."
+            content="Vefi is spear-heading the mass adoption of web3 technology in the not-so-distant future."
           />
         </Head>
         <body>

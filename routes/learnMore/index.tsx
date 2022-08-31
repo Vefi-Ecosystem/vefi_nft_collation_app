@@ -18,14 +18,11 @@ const LearnMore = () => {
             <Typography.Title>Here&apos;s why you should join in at this time.</Typography.Title>
             <div className="content">
               <ol>
-                <li>Enjoy low gas fees for minting a collection on vefi nft .</li>
-                <li>Access to staking polls.</li>
-                <li>Run your nft presale easily on our launchpad.</li>
-                <li>
-                  1 lucky collection gets showcases to our community daily and 5 collections gets to have a free AMA to
-                  talk about thier projects to our community weekly.
-                </li>
-                <li>Try out our open collection feature.</li>
+                <li>You&apos;ll get quick verification on our NFT marketplace.</li>
+                <li>You&apos;ll get front-page privilege.</li>
+                <li>Help with community-building.</li>
+                <li>You stand a chance to have an AMA with our community members.</li>
+                <li>You define the price for your assets.</li>
               </ol>
             </div>
           </div>

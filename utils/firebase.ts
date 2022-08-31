@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -8,18 +8,16 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBZke1D2XeKQOVlrw8ssQ3xSyWZ0nIfG1Y",
-  authDomain: "chat-app-85926.firebaseapp.com",
-  projectId: "chat-app-85926",
-  storageBucket: "chat-app-85926.appspot.com",
-  messagingSenderId: "1062538230615",
-  appId: "1:1062538230615:web:768eba2a60c02743e2dc12",
-  measurementId: "G-MHES3420H3"
+  apiKey: "AIzaSyDJF4dxFMcAWPut8pG1LLXJjVhPeTUfuXs",
+  authDomain: "vefi-nft-collections-collation.firebaseapp.com",
+  projectId: "vefi-nft-collections-collation",
+  storageBucket: "vefi-nft-collections-collation.appspot.com",
+  messagingSenderId: "478094501112",
+  appId: "1:478094501112:web:76ad12b466ac99bb02070d",
+  measurementId: "G-S6YN35K3FK"
 };
-
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
 const db = getFirestore(app);
-
 export { app, analytics, db };
